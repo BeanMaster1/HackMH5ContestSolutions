@@ -30,8 +30,8 @@ public class OstanianCipherCracking
             int diff = ciphertext[m-i] - plaintext[m-i];
             //make sure number is positive
             diff = (diff+26)%26;
-            //because of how data is encrypted, diff is the key[m-1], or the plaintext[m-n-i];
-            plaintext[m-n-i] = (char)(diff + 'a');
+            //because of how data is encrypted, diff is the key[m-i], or the plaintext[m-i-n];
+            plaintext[m-i-n] = (char)(diff + 'a');
         }
         
         //print plaintext
