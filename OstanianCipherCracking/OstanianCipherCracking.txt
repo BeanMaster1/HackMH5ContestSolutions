@@ -1,0 +1,44 @@
+The Master Spy, Twilight, has stolen classified Ostanian Military Documents. 
+The only issue is, the Ostanian State Security Service (SSS) encrypts all their communications. 
+Thankfully, Twilight knows how their cipher works.
+
+First, they convert all characters 'a'-'z' in alpahbetical order to the numbers 0-25
+
+The encryption key K begins with a secret prefix n characters long. Each remaining character in K is copied from the unencrypted plaintext A, so that
+K[n+i] = A[i]
+for i >= 1
+
+Encryption from plaintext A to ciphertext B follows the follwing formula:
+B[i] = A[i] + K[i] mod 26
+
+Twilight was able to see the last n letters of the plaintext by disguising himself as an SSS rookie. However, now he will need to decipher the rest himself.
+
+Input Format
+
+The input consists of:
+
+One line with 2 integers n and m, where n is the length of the number of letters Twilight saw, and m is the length of the document
+One line with n lowercase letters, the letters twilight saw
+One line with m lowercase letters, the encrypted document
+
+Constraints
+1 <= n <= 30
+n+1 <= m <= 100
+
+Output Format
+
+Output the plaintext document
+
+Sample Input 0
+5 13
+light
+cbvflvwbnpzdb
+Sample Output 0
+catchtwilight
+
+Sample Input 1
+1 11
+t
+clhdialaawl
+Sample Output 1
+stopthewest
