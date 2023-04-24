@@ -1,0 +1,52 @@
+Anya is playing with a toy, but she isn't playing with it very well (from Twilight's perspective). 
+The toy has 3 poles, A, B, and C, and N of rings of different sizes on them.
+
+The rules for this toy are as follows:
+
+You can only move 1 ring at a time
+You cannot put a larger ring on top of a smaller ring
+All the rings start on pole A. Your mission is to figure out the moves required to move all the rings from pole A to pole C in the fewest moves possible
+
+Input Format
+
+Your input will be an integer N, the number of rings starting on pole A
+
+Constraints
+1 <= N <= 10
+
+Output Format
+
+Output the moves required to move all the rings from A to C in the minimum possible moves, using the following format:
+Move A to B
+
+Sample Input 0
+1
+Sample Output 0
+Move A to C
+Explanation
+1
+A B C
+Move A to C
+    1
+A B C
+
+Sample Input 1
+2
+Sample Output 1
+Move A to B
+Move A to C
+Move B to C
+Explanation
+1
+2
+A B C
+Move A to B
+2 1
+A B C
+Move A to C
+  1 2
+A B C
+Move B to C
+    1
+    2
+A B C
