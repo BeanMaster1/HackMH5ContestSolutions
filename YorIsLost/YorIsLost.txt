@@ -1,0 +1,46 @@
+Yor the assasin is on the job, but she is a little out of practice. 
+This hit was not perfectly planned, and the target is almost about to get away. 
+Thankfully, Yor is able to run at superhuman speeds, so if there is a path to her target, she can catch him. 
+Your mission is to determine whether or not Yor has a path to her target. 
+She can only move up, down, left, or right, no diagonals
+
+Input Format
+
+The first line will consist of two integers, R and C, representing the number of rows and the number of columns of input.
+
+The next R rows will contain strings of length C, with the following characters
+
+# - Wall, cannot be crossed
+. - Path
+Y - Yor's starting position
+T - Target's position
+
+Constraints
+2 <= R,C <= 100
+
+Output Format
+
+If Yor can make it to her target, output
+May I have the honor of taking your life?
+
+Otherwise, output
+Another traitorous scumbag got away
+
+Sample Input 0
+4 3
+Y##
+.##
+.#T
+...
+
+Sample Output 0
+May I have the honor of taking your life?
+
+Sample Input 1
+3 5
+#####
+T.#.Y
+#####
+
+Sample Output 1
+Another traitorous scumbag got away
