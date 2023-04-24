@@ -24,6 +24,15 @@ public class EdenAcademyRecess
             int b = 51;  (0011 0011 in binary)
             int c = a&b; (0001 0010 in binary)
             print(c) -> 18
+            
+            In this case, the number of claps in binary looks like what 32 students playing would look like
+            To Check for a smaller number of students, we can only check if the rightmost n students are raising their hands through a bitwise AND
+            For example:
+            3 students:
+            2^3 - 1 == 7 == 0000 0111
+            15 claps == 0000 1111
+            15 & 7 == 0000 0111 == 7
+            Therefore, all 3 have their hands raised
             */
             
             if( (numClaps&allStudentsRaisingHands) == allStudentsRaisingHands)
