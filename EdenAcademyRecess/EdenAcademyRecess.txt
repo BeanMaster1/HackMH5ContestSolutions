@@ -1,0 +1,46 @@
+Anya and her classmates at Eden Academy are playing a game during recess. 
+All N students are standing in a line, with their arms either raised in the air or lowered. They play with the following rules:
+
+Each student watches the student in front of them. When the student in front of them lowers their arms from the air, the student watching does 1 of 2 things:
+
+If the student watching has their arms are in the air, they lower them
+Otherwise, they raise their arms in the air
+
+All students start the game with their hands down. The first student in line switches from lowered to raised or from raised to lowered whenever their teacher, Professor Henry Henderson, claps his hands.
+
+Your mission is to figure out, after Professor Henderson claps N times, whether or not all the students have their hands in the air.
+
+Input Format
+
+An integer, T, the number of test cases.
+
+The next T lines contain 2 integers, M (The number of students) and N (How many times Henderson claps)
+
+Constraints
+1 <= T <= 100,000
+1 <= M <= 30
+0 <= N <= 2,147,483,647
+
+Output Format
+
+For each test case:
+
+This should be printed if all students have their hands in the air:
+ELEGANT!!!
+Otherwise, print
+NOT ELEGANT!!!
+
+Sample Input 0
+2
+3 7
+3 6
+
+Sample Output 0
+ELEGANT!!!
+NOT ELEGANT!!!
+
+Explanation
+Case 1:
+After 7 claps, all 3 students will have their hands in the air
+Case 2:
+After 6 claps, the first student will not have their hands in the air
